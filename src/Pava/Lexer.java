@@ -18,8 +18,8 @@ import java.util.regex.Pattern;
  */
 public class Lexer {
 
-    public static String regexPat = "\\s*((//.*)|([0-9]+)|(\"(\\\\\"|\\\\\\\\|\\\\n|[^\"]) *\")" +
-            "|[A-Za-z][A-Za-z0-9]*|==|<=|>=|&&|\\|\\||\\p{Punct})?";
+    public static String regexPat = "\\s*((//.*)|([0-9]+)|(\"(\\\\\"|\\\\\\\\|\\\\n|[^\"])*\")" +
+            "|[A-Z_a-z][A-Z_a-z0-9]*|==|<=|>=|&&|\\|\\||\\p{Punct})?";
 
     private Pattern pattern = Pattern.compile(regexPat);
     private ArrayList<Token> queue = new ArrayList<>();
@@ -87,7 +87,7 @@ public class Lexer {
     protected String toStringLiteral(String s) {
         StringBuilder sb = new StringBuilder();
         int len = s.length() - 1;
-        for (int i = 0; i < len; i++) {
+        for (int i = 1; i < len; i++) {
             char c = s.charAt(i);
             if (c == '\\' && i + 1 < len) {
                 char c2 = s.charAt(i + 1);
