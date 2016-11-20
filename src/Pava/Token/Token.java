@@ -1,4 +1,4 @@
-package Pava;
+package Pava.Token;
 
 /**
  * Token class
@@ -37,7 +37,7 @@ public abstract class Token {
         return -1;
     }
 
-    public String getString() {
+    public String getText() {
         return "";
     }
 }
