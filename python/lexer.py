@@ -2,7 +2,6 @@
 # -*- coding:utf-8 -*-
 
 
-from token import *
 from pava_exception import *
 import re
 
