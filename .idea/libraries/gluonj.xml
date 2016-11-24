@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gluonj">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/gluonj.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
