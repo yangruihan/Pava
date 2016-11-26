@@ -231,4 +231,26 @@ public class BasicEvaluator {
             }
         }
     }
+
+    @Reviser
+    public static class ForEx extends ForStmnt {
+        public ForEx(List<ASTree> children) {
+            super(children);
+        }
+
+        public Object eval(Environment environment) {
+            Object result = 0;
+
+            ((ASTreeEx) initial()).eval(environment);
+            for (; ; ) {
+                Object c = ((ASTreeEx) condition()).eval(environment);
+                if (c instanceof Integer && ((Integer) c) == FALSE) {
+                    return result;
+                } else {
+                    result = ((ASTreeEx) body()).eval(environment);
+                    ((ASTreeEx) step()).eval(environment);
+                }
+            }
+        }
+    }
 }
