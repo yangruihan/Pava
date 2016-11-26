@@ -1,6 +1,6 @@
-package Pava.Test;
+package Pava.Runner;
 
-import Pava.BasicEvaluator;
+import Pava.Evaluator.BasicEvaluator;
 import Pava.BasicInterpreter;
 import javassist.gluonj.util.Loader;
 

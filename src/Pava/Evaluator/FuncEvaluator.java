@@ -1,8 +1,7 @@
-package Pava;
+package Pava.Evaluator;
 
 import Pava.AST.*;
 import Pava.Environment.Environment;
-import Pava.BasicEvaluator.*;
 import Pava.Exception.PavaException;
 import Pava.Model.Function;
 import javassist.gluonj.Require;
@@ -67,7 +66,7 @@ public class FuncEvaluator {
                 Object target = evalSubExpr(environment, nest + 1);
                 return ((PostfixEx) postfix(nest)).eval(environment, target);
             } else {
-                return ((ASTreeEx) operand()).eval(environment);
+                return ((BasicEvaluator.ASTreeEx) operand()).eval(environment);
             }
         }
     }
@@ -99,9 +98,9 @@ public class FuncEvaluator {
             Environment newEnv = func.makeEnv();
             int num = 0;
             for (ASTree a : this) {
-                ((ParamsEx) parameters).eval(newEnv, num++, ((ASTreeEx) a).eval(callerEnv));
+                ((ParamsEx) parameters).eval(newEnv, num++, ((BasicEvaluator.ASTreeEx) a).eval(callerEnv));
             }
-            return ((BlockEx) func.body()).eval(newEnv);
+            return ((BasicEvaluator.BlockEx) func.body()).eval(newEnv);
         }
     }
 

@@ -1,4 +1,4 @@
-package Pava.Test;
+package Pava.Runner;
 
 import Pava.AST.ASTree;
 import Pava.BasicParser;

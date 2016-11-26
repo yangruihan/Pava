@@ -1,4 +1,4 @@
-package Pava.Test;
+package Pava.Runner;
 
 import Pava.Lexer;
 import Pava.Exception.ParseException;

@@ -1,4 +1,4 @@
-package Pava;
+package Pava.Evaluator;
 
 import Pava.AST.*;
 import Pava.Environment.Environment;

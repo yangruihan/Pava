@@ -2,7 +2,7 @@ package Pava.Environment;
 
 import java.util.HashMap;
 
-import Pava.FuncEvaluator.EnvEx;
+import Pava.Evaluator.FuncEvaluator.EnvEx;
 
 /**
  * Nested environment to support local variable and global variable
