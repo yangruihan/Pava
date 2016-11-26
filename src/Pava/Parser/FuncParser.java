@@ -1,10 +1,10 @@
-package Pava;
+package Pava.Parser;
 
 import Pava.AST.Arguments;
 import Pava.AST.DefStmnt;
 import Pava.AST.ParameterList;
 
-import static Pava.Parser.rule;
+import static Pava.Parser.Parser.rule;
 
 /**
  * Add def identifier for Pava which can define a function

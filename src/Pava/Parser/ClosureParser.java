@@ -1,8 +1,8 @@
-package Pava;
+package Pava.Parser;
 
 import Pava.AST.Fun;
 
-import static Pava.Parser.rule;
+import static Pava.Parser.Parser.rule;
 
 /**
  * Created by yangruihan on 2016/11/26.

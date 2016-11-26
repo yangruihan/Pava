@@ -1,7 +1,7 @@
 package Pava.Runner;
 
 import Pava.Evaluator.FuncEvaluator;
-import Pava.FuncInterpreter;
+import Pava.Interpreter.FuncInterpreter;
 import javassist.gluonj.util.Loader;
 
 /**

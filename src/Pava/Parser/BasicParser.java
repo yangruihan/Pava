@@ -1,13 +1,14 @@
-package Pava;
+package Pava.Parser;
 
 import java.util.HashSet;
 
 import Pava.Exception.ParseException;
-import Pava.Parser.Operators;
+import Pava.Lexer;
+import Pava.Parser.Parser.Operators;
 import Pava.AST.*;
 import Pava.Token.Token;
 
-import static Pava.Parser.rule;
+import static Pava.Parser.Parser.rule;
 
 /**
  * A basic parser for Pava grammatical analysis

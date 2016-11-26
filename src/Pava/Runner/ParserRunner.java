@@ -1,7 +1,7 @@
 package Pava.Runner;
 
 import Pava.AST.ASTree;
-import Pava.BasicParser;
+import Pava.Parser.BasicParser;
 import Pava.Lexer;
 import Pava.Exception.ParseException;
 import Pava.Token.Token;

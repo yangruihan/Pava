@@ -1,10 +1,11 @@
-package Pava;
+package Pava.Parser;
 
 
 import Pava.AST.ASTLeaf;
 import Pava.AST.ASTList;
 import Pava.AST.ASTree;
 import Pava.Exception.ParseException;
+import Pava.Lexer;
 import Pava.Token.Token;
 
 import java.util.HashMap;

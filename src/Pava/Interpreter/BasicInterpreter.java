@@ -1,11 +1,13 @@
-package Pava;
+package Pava.Interpreter;
 
 import Pava.AST.ASTree;
 import Pava.AST.NullStmnt;
+import Pava.Parser.BasicParser;
 import Pava.Environment.BasicEnv;
 import Pava.Environment.Environment;
 import Pava.Evaluator.BasicEvaluator;
 import Pava.Exception.ParseException;
+import Pava.Lexer;
 import Pava.Token.Token;
 import Pava.UI.CodeDialog;
 
