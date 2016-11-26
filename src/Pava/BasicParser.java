@@ -2,6 +2,7 @@ package Pava;
 
 import java.util.HashSet;
 
+import Pava.Exception.ParseException;
 import Pava.Parser.Operators;
 import Pava.AST.*;
 import Pava.Token.Token;

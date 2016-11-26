@@ -2,6 +2,7 @@ package Pava;
 
 import Pava.AST.*;
 import Pava.Environment.Environment;
+import Pava.Exception.PavaException;
 import Pava.Token.Token;
 import javassist.gluonj.Reviser;
 

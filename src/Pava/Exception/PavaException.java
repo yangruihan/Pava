@@ -1,4 +1,4 @@
-package Pava;
+package Pava.Exception;
 
 import Pava.AST.ASTree;
 

@@ -1,5 +1,6 @@
 package Pava;
 
+import Pava.Exception.ParseException;
 import Pava.Token.IdToken;
 import Pava.Token.NumToken;
 import Pava.Token.StrToken;

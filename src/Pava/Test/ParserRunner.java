@@ -3,7 +3,7 @@ package Pava.Test;
 import Pava.AST.ASTree;
 import Pava.BasicParser;
 import Pava.Lexer;
-import Pava.ParseException;
+import Pava.Exception.ParseException;
 import Pava.Token.Token;
 import Pava.UI.CodeDialog;
 

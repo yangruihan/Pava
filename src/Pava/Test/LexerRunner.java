@@ -1,7 +1,7 @@
 package Pava.Test;
 
 import Pava.Lexer;
-import Pava.ParseException;
+import Pava.Exception.ParseException;
 import Pava.Token.Token;
 import Pava.UI.CodeDialog;
 

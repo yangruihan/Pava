@@ -4,6 +4,7 @@ import Pava.AST.ASTree;
 import Pava.AST.NullStmnt;
 import Pava.Environment.BasicEnv;
 import Pava.Environment.Environment;
+import Pava.Exception.ParseException;
 import Pava.Token.Token;
 import Pava.UI.CodeDialog;
 

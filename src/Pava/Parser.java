@@ -4,6 +4,7 @@ package Pava;
 import Pava.AST.ASTLeaf;
 import Pava.AST.ASTList;
 import Pava.AST.ASTree;
+import Pava.Exception.ParseException;
 import Pava.Token.Token;
 
 import java.util.HashMap;
